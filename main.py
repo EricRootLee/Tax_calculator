@@ -9,8 +9,7 @@ def all_people():
         print("|No.| Name | Age | Gross Pay | Net Pay |")
         print("|---|------|-----|-----------|---------|")
         for worker in workers:
-            print("|", workers.index(worker) + 1, "|", worker.name, "|", worker.age, "|", worker.salary, "|",
-                  worker.net_pay, "|")
+            print()
     else:
         print("No Workers")
 
