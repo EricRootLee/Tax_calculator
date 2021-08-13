@@ -1,9 +1,6 @@
-import tax_calculator as tc
 import Person as pc
-
 workers = []
 counter = 0
-
 
 def all_people():
     if len(workers) > 0:
@@ -15,19 +12,16 @@ def all_people():
     else:
         print("No Workers")
 
-
 while counter < 2:
     try:
         name = str(input("Enter your name: \n"))
         try:
             age = int(input("Enter your age: \n"))
             gross_pay = int(input("Enter your pay: \n"))
-            net_pay = tc.total_calc_tax(gross_pay, age)
             person = pc.Person(
                 name,
                 age,
                 gross_pay,
-                net_pay
             )
             workers.append(person)
             counter += 1
