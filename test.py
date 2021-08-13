@@ -13,6 +13,10 @@ class MyTestCase(unittest.TestCase):
         net_pay = elijah.calc_tax(10)
         self.assertEqual(90, net_pay)
 
+    def test_calc(self):
+        """Test Calculator OutPut"""
+        self.assertEqual("| 1 | Elijah | 23 | 100 | 91.0 |", elijah.toString(1))
+
     def test_tax_age_bracket_45(self):
         """Test tax with the age bracket of less than 46 years"""
         net_pay_age = elijah.total_calc_tax()

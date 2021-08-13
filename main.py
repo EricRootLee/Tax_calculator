@@ -3,13 +3,12 @@ import Person as pc
 workers = []
 counter = 0
 
-
 def all_people():
     if len(workers) > 0:
         print("|No.| Name | Age | Gross Pay | Net Pay |")
         print("|---|------|-----|-----------|---------|")
         for worker in workers:
-             worker.toString(workers.index(worker+1))
+            print(worker.toString(workers.index(worker) + 1))
     else:
         print("No Workers")
 
