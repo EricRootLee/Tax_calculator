@@ -1,12 +1,12 @@
 class Person:
-    def __init__(self, name: str, age: int, salary: int,):
+    def __init__(self, name: str, age: int, salary: int, ):
         self.name = name
         self.age = age
         self.salary = salary
         self.net_pay = self.total_calc_tax()
+
     def toString(self):
-        return  "|", self.name, "|", self.age, "|", self.salary, "|",
-                  self.net_pay, "|"    
+        return "|", self.name, "|", self.age, "|", self.salary, "|", self.net_pay, "|"
 
     def calc_tax(self, tax) -> int:
         income_tax = self.salary * (tax / 100)

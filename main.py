@@ -9,7 +9,7 @@ def all_people():
         print("|No.| Name | Age | Gross Pay | Net Pay |")
         print("|---|------|-----|-----------|---------|")
         for worker in workers:
-            print()
+            print("|", worker.toString())
     else:
         print("No Workers")
 
