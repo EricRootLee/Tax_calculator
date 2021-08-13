@@ -1,6 +1,8 @@
 import Person as pc
+
 workers = []
 counter = 0
+
 
 def all_people():
     if len(workers) > 0:
@@ -11,6 +13,7 @@ def all_people():
                   worker.net_pay, "|")
     else:
         print("No Workers")
+
 
 while counter < 2:
     try:
